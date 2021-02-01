@@ -1,0 +1,1554 @@
+2020/12/20 14:15:56 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column `trackstar`.`tbl_project`.`create_time` at row 1. The SQL statement executed was: INSERT INTO `tbl_project` (`name`, `description`, `create_time`, `create_user_id`, `update_time`, `update_user_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in W:\domains\trackstar\protected\controllers\ProjectController.php (73)
+in W:\domains\trackstar\index.php (13)
+2020/12/20 14:15:56 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column `trackstar`.`tbl_project`.`create_time` at row 1. The SQL statement executed was: INSERT INTO `tbl_project` (`name`, `description`, `create_time`, `create_user_id`, `update_time`, `update_user_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5) in W:\domains\YiiRoot\framework\db\CDbCommand.php:358
+Stack trace:
+#0 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 W:\domains\trackstar\protected\controllers\ProjectController.php(73): CActiveRecord->save()
+#3 W:\domains\YiiRoot\framework\web\actions\CInlineAction.php(49): ProjectController->actionCreate()
+#4 W:\domains\YiiRoot\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#11 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#13 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('project/create')
+#14 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 W:\domains\trackstar\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=project/create
+HTTP_REFERER=http://trackstar/index.php?r=project/create
+---
+2020/12/20 14:17:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column `trackstar`.`tbl_project`.`create_time` at row 1. The SQL statement executed was: INSERT INTO `tbl_project` (`name`, `description`, `create_time`, `create_user_id`, `update_time`, `update_user_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in W:\domains\trackstar\protected\controllers\ProjectController.php (73)
+in W:\domains\trackstar\index.php (13)
+2020/12/20 14:17:24 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column `trackstar`.`tbl_project`.`create_time` at row 1. The SQL statement executed was: INSERT INTO `tbl_project` (`name`, `description`, `create_time`, `create_user_id`, `update_time`, `update_user_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5) in W:\domains\YiiRoot\framework\db\CDbCommand.php:358
+Stack trace:
+#0 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 W:\domains\trackstar\protected\controllers\ProjectController.php(73): CActiveRecord->save()
+#3 W:\domains\YiiRoot\framework\web\actions\CInlineAction.php(49): ProjectController->actionCreate()
+#4 W:\domains\YiiRoot\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#11 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#13 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('project/create')
+#14 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 W:\domains\trackstar\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=project/create
+HTTP_REFERER=http://trackstar/index.php?r=project/create
+---
+2020/12/20 14:18:36 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1' for column `trackstar`.`tbl_project`.`create_time` at row 1. The SQL statement executed was: INSERT INTO `tbl_project` (`name`, `description`, `create_time`, `create_user_id`, `update_time`, `update_user_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in W:\domains\trackstar\protected\controllers\ProjectController.php (73)
+in W:\domains\trackstar\index.php (13)
+2020/12/20 14:18:36 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1' for column `trackstar`.`tbl_project`.`create_time` at row 1. The SQL statement executed was: INSERT INTO `tbl_project` (`name`, `description`, `create_time`, `create_user_id`, `update_time`, `update_user_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5) in W:\domains\YiiRoot\framework\db\CDbCommand.php:358
+Stack trace:
+#0 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 W:\domains\trackstar\protected\controllers\ProjectController.php(73): CActiveRecord->save()
+#3 W:\domains\YiiRoot\framework\web\actions\CInlineAction.php(49): ProjectController->actionCreate()
+#4 W:\domains\YiiRoot\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#11 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#13 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('project/create')
+#14 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 W:\domains\trackstar\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=project/create
+HTTP_REFERER=http://trackstar/index.php?r=project/create
+---
+2020/12/20 14:18:44 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column `trackstar`.`tbl_project`.`create_time` at row 1. The SQL statement executed was: INSERT INTO `tbl_project` (`name`, `description`, `create_time`, `create_user_id`, `update_time`, `update_user_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in W:\domains\trackstar\protected\controllers\ProjectController.php (73)
+in W:\domains\trackstar\index.php (13)
+2020/12/20 14:18:44 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column `trackstar`.`tbl_project`.`create_time` at row 1. The SQL statement executed was: INSERT INTO `tbl_project` (`name`, `description`, `create_time`, `create_user_id`, `update_time`, `update_user_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5) in W:\domains\YiiRoot\framework\db\CDbCommand.php:358
+Stack trace:
+#0 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 W:\domains\trackstar\protected\controllers\ProjectController.php(73): CActiveRecord->save()
+#3 W:\domains\YiiRoot\framework\web\actions\CInlineAction.php(49): ProjectController->actionCreate()
+#4 W:\domains\YiiRoot\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#11 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#13 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('project/create')
+#14 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 W:\domains\trackstar\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=project/create
+HTTP_REFERER=http://trackstar/index.php?r=project/create
+---
+2021/01/19 13:16:16 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "issue/view". in W:\domains\YiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/view')
+#1 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 W:\domains\trackstar\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=issue/view&id=1
+---
+2021/01/19 13:17:39 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "issue". in W:\domains\YiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue')
+#1 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 W:\domains\trackstar\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=issue
+---
+2021/01/21 12:52:56 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "issue". in W:\domains\YiiRoot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue')
+#1 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 W:\domains\trackstar\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=issue
+---
+2021/01/21 12:55:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trackstar.tbl_issue' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_issue`.
+in W:\domains\trackstar\index.php (13)
+2021/01/29 11:53:22 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:214
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 12:55:34 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:214
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 12:55:39 [error] [exception.CException] CException: Property "Project.users" is not defined. in W:\domains\YiiRoot\framework\base\CComponent.php:130
+Stack trace:
+#0 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(145): CComponent->__get('users')
+#1 W:\domains\trackstar\protected\models\Project.php(120): CActiveRecord->__get('users')
+#2 W:\domains\trackstar\protected\views\issue\_form.php(53): Project->getUserOptions()
+#3 W:\domains\YiiRoot\framework\web\CBaseController.php(126): require('W:\\domains\\trac...')
+#4 W:\domains\YiiRoot\framework\web\CBaseController.php(95): CBaseController->renderInternal('W:\\domains\\trac...', Array, true)
+#5 W:\domains\YiiRoot\framework\web\CController.php(872): CBaseController->renderFile('W:\\domains\\trac...', Array, true)
+#6 W:\domains\trackstar\protected\views\issue\create.php(18): CController->renderPartial('_form', Array)
+#7 W:\domains\YiiRoot\framework\web\CBaseController.php(126): require('W:\\domains\\trac...')
+#8 W:\domains\YiiRoot\framework\web\CBaseController.php(95): CBaseController->renderInternal('W:\\domains\\trac...', Array, true)
+#9 W:\domains\YiiRoot\framework\web\CController.php(872): CBaseController->renderFile('W:\\domains\\trac...', Array, true)
+#10 W:\domains\YiiRoot\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#11 W:\domains\trackstar\protected\controllers\IssueController.php(85): CController->render('create', Array)
+#12 W:\domains\YiiRoot\framework\web\actions\CInlineAction.php(49): IssueController->actionCreate()
+#13 W:\domains\YiiRoot\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 W:\domains\trackstar\protected\controllers\IssueController.php(216): CFilterChain->run()
+#16 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#17 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#20 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#23 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#25 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#26 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#27 W:\domains\trackstar\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/index.php?r=issue/create&pid=1
+---
+2021/01/29 12:55:51 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:214
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 12:56:19 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:214
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 12:58:34 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:214
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 12:58:41 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:214
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 12:59:44 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:214
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 13:04:38 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:216
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 13:04:39 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:216
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 13:04:40 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:216
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 13:07:08 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:216
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 13:07:09 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:216
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 13:07:11 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:216
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue
+---
+2021/01/29 13:07:21 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:216
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue
+---
+2021/01/29 13:15:03 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:216
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:19:24 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:216
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:23:33 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:216
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:24:10 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:216
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+---
+2021/01/29 13:31:48 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:217
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+---
+2021/01/29 13:31:53 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:217
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+---
+2021/01/29 13:33:47 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:217
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+---
+2021/01/29 13:34:01 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:217
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:36:55 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:217
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:36:56 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:217
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:37:01 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:217
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:39:52 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:231
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:39:53 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:231
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:39:53 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:231
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:44:04 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 13:45:42 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:45:43 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:45:43 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:45:43 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:45:44 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:45:44 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:45:44 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:45:44 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:45:45 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:45:45 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:45:45 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:45:45 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:45:45 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:45:45 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:45:46 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:45:46 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:45:46 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:45:46 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:56:29 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:56:37 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
+2021/01/29 13:58:46 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 14:01:04 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 14:05:46 [error] [php] include(User.php): failed to open stream: No such file or directory (W:\domains\YiiRoot\framework\YiiBase.php:463)
+Stack trace:
+#0 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(397): spl_autoload_call()
+#1 W:\domains\YiiRoot\framework\db\ar\CActiveFinder.php(182): model()
+#2 W:\domains\YiiRoot\framework\db\ar\CActiveFinder.php(231): CActiveFinder->getModel()
+#3 W:\domains\YiiRoot\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#4 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(915): CActiveFinder->__construct()
+#5 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(282): Project->getActiveFinder()
+#6 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(143): Project->getRelated()
+#7 W:\domains\trackstar\protected\models\Project.php(119): Project->__get()
+#8 W:\domains\trackstar\protected\views\issue\_form.php(52): Project->getUserOptions()
+#9 W:\domains\YiiRoot\framework\web\CBaseController.php(126): require()
+#10 W:\domains\YiiRoot\framework\web\CBaseController.php(95): IssueController->renderInternal()
+#11 W:\domains\YiiRoot\framework\web\CController.php(872): IssueController->renderFile()
+#12 W:\domains\trackstar\protected\views\issue\create.php(18): IssueController->renderPartial()
+#13 W:\domains\YiiRoot\framework\web\CBaseController.php(126): require()
+#14 W:\domains\YiiRoot\framework\web\CBaseController.php(95): IssueController->renderInternal()
+#15 W:\domains\YiiRoot\framework\web\CController.php(872): IssueController->renderFile()
+#16 W:\domains\YiiRoot\framework\web\CController.php(785): IssueController->renderPartial()
+#17 W:\domains\trackstar\protected\controllers\IssueController.php(86): IssueController->render()
+#18 W:\domains\YiiRoot\framework\web\actions\CInlineAction.php(49): IssueController->actionCreate()
+#19 W:\domains\YiiRoot\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(134): IssueController->runAction()
+#21 W:\domains\trackstar\protected\controllers\IssueController.php(221): CFilterChain->run()
+#22 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext()
+#23 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#24 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 W:\domains\YiiRoot\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#26 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterAccessControl()
+#27 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#28 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#29 W:\domains\YiiRoot\framework\web\CController.php(265): IssueController->runActionWithFilters()
+#30 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): IssueController->run()
+#31 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#32 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#33 W:\domains\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=issue/create&pid=1
+in W:\domains\trackstar\protected\models\Project.php (119)
+in W:\domains\trackstar\protected\views\issue\_form.php (52)
+in W:\domains\trackstar\protected\views\issue\create.php (18)
+2021/01/29 14:11:42 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:219
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 14:18:14 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:220
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 14:18:15 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:220
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 14:18:15 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:220
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 14:18:16 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:220
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 14:18:17 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:220
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 14:18:19 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:220
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 14:19:03 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:220
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 14:19:30 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:220
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 14:19:31 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:220
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 14:24:58 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:220
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 14:25:36 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:220
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 14:27:26 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:220
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 14:29:52 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:220
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 14:29:53 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:220
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 14:29:54 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:220
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
+2021/01/29 14:30:58 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in W:\domains\YiiRoot\framework\web\CController.php:337
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('update')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('project/update')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=project/update
+---
+2021/01/29 14:33:14 [error] [php] include(User.php): failed to open stream: No such file or directory (W:\domains\YiiRoot\framework\YiiBase.php:463)
+Stack trace:
+#0 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(397): spl_autoload_call()
+#1 W:\domains\YiiRoot\framework\db\ar\CActiveFinder.php(182): model()
+#2 W:\domains\YiiRoot\framework\db\ar\CActiveFinder.php(231): CActiveFinder->getModel()
+#3 W:\domains\YiiRoot\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#4 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(915): CActiveFinder->__construct()
+#5 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(282): Project->getActiveFinder()
+#6 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(143): Project->getRelated()
+#7 W:\domains\trackstar\protected\models\Project.php(119): Project->__get()
+#8 W:\domains\trackstar\protected\views\issue\_form.php(52): Project->getUserOptions()
+#9 W:\domains\YiiRoot\framework\web\CBaseController.php(126): require()
+#10 W:\domains\YiiRoot\framework\web\CBaseController.php(95): IssueController->renderInternal()
+#11 W:\domains\YiiRoot\framework\web\CController.php(872): IssueController->renderFile()
+#12 W:\domains\trackstar\protected\views\issue\create.php(18): IssueController->renderPartial()
+#13 W:\domains\YiiRoot\framework\web\CBaseController.php(126): require()
+#14 W:\domains\YiiRoot\framework\web\CBaseController.php(95): IssueController->renderInternal()
+#15 W:\domains\YiiRoot\framework\web\CController.php(872): IssueController->renderFile()
+#16 W:\domains\YiiRoot\framework\web\CController.php(785): IssueController->renderPartial()
+#17 W:\domains\trackstar\protected\controllers\IssueController.php(86): IssueController->render()
+#18 W:\domains\YiiRoot\framework\web\actions\CInlineAction.php(49): IssueController->actionCreate()
+#19 W:\domains\YiiRoot\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(134): IssueController->runAction()
+#21 W:\domains\trackstar\protected\controllers\IssueController.php(222): CFilterChain->run()
+#22 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext()
+#23 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#24 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 W:\domains\YiiRoot\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#26 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterAccessControl()
+#27 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#28 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#29 W:\domains\YiiRoot\framework\web\CController.php(265): IssueController->runActionWithFilters()
+#30 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): IssueController->run()
+#31 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#32 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#33 W:\domains\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=issue/create&pid=1
+in W:\domains\trackstar\protected\models\Project.php (119)
+in W:\domains\trackstar\protected\views\issue\_form.php (52)
+in W:\domains\trackstar\protected\views\issue\create.php (18)
+2021/01/29 14:34:34 [error] [php] include(User.php): failed to open stream: No such file or directory (W:\domains\YiiRoot\framework\YiiBase.php:463)
+Stack trace:
+#0 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(397): spl_autoload_call()
+#1 W:\domains\YiiRoot\framework\db\ar\CActiveFinder.php(182): model()
+#2 W:\domains\YiiRoot\framework\db\ar\CActiveFinder.php(231): CActiveFinder->getModel()
+#3 W:\domains\YiiRoot\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#4 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(915): CActiveFinder->__construct()
+#5 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(282): Project->getActiveFinder()
+#6 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(143): Project->getRelated()
+#7 W:\domains\trackstar\protected\models\Project.php(119): Project->__get()
+#8 W:\domains\trackstar\protected\views\issue\_form.php(52): Project->getUserOptions()
+#9 W:\domains\YiiRoot\framework\web\CBaseController.php(126): require()
+#10 W:\domains\YiiRoot\framework\web\CBaseController.php(95): IssueController->renderInternal()
+#11 W:\domains\YiiRoot\framework\web\CController.php(872): IssueController->renderFile()
+#12 W:\domains\trackstar\protected\views\issue\create.php(18): IssueController->renderPartial()
+#13 W:\domains\YiiRoot\framework\web\CBaseController.php(126): require()
+#14 W:\domains\YiiRoot\framework\web\CBaseController.php(95): IssueController->renderInternal()
+#15 W:\domains\YiiRoot\framework\web\CController.php(872): IssueController->renderFile()
+#16 W:\domains\YiiRoot\framework\web\CController.php(785): IssueController->renderPartial()
+#17 W:\domains\trackstar\protected\controllers\IssueController.php(86): IssueController->render()
+#18 W:\domains\YiiRoot\framework\web\actions\CInlineAction.php(49): IssueController->actionCreate()
+#19 W:\domains\YiiRoot\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(134): IssueController->runAction()
+#21 W:\domains\trackstar\protected\controllers\IssueController.php(222): CFilterChain->run()
+#22 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext()
+#23 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#24 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 W:\domains\YiiRoot\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#26 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterAccessControl()
+#27 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#28 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#29 W:\domains\YiiRoot\framework\web\CController.php(265): IssueController->runActionWithFilters()
+#30 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): IssueController->run()
+#31 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#32 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#33 W:\domains\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=issue/create&pid=1
+in W:\domains\trackstar\protected\models\Project.php (119)
+in W:\domains\trackstar\protected\views\issue\_form.php (52)
+in W:\domains\trackstar\protected\views\issue\create.php (18)
+2021/01/30 15:50:06 [error] [php] include(User.php): failed to open stream: No such file or directory (W:\domains\YiiRoot\framework\YiiBase.php:463)
+Stack trace:
+#0 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(397): spl_autoload_call()
+#1 W:\domains\YiiRoot\framework\db\ar\CActiveFinder.php(182): model()
+#2 W:\domains\YiiRoot\framework\db\ar\CActiveFinder.php(231): CActiveFinder->getModel()
+#3 W:\domains\YiiRoot\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#4 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(915): CActiveFinder->__construct()
+#5 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(282): Project->getActiveFinder()
+#6 W:\domains\YiiRoot\framework\db\ar\CActiveRecord.php(143): Project->getRelated()
+#7 W:\domains\trackstar\protected\models\Project.php(119): Project->__get()
+#8 W:\domains\trackstar\protected\views\issue\_form.php(52): Project->getUserOptions()
+#9 W:\domains\YiiRoot\framework\web\CBaseController.php(126): require()
+#10 W:\domains\YiiRoot\framework\web\CBaseController.php(95): IssueController->renderInternal()
+#11 W:\domains\YiiRoot\framework\web\CController.php(872): IssueController->renderFile()
+#12 W:\domains\trackstar\protected\views\issue\create.php(18): IssueController->renderPartial()
+#13 W:\domains\YiiRoot\framework\web\CBaseController.php(126): require()
+#14 W:\domains\YiiRoot\framework\web\CBaseController.php(95): IssueController->renderInternal()
+#15 W:\domains\YiiRoot\framework\web\CController.php(872): IssueController->renderFile()
+#16 W:\domains\YiiRoot\framework\web\CController.php(785): IssueController->renderPartial()
+#17 W:\domains\trackstar\protected\controllers\IssueController.php(86): IssueController->render()
+#18 W:\domains\YiiRoot\framework\web\actions\CInlineAction.php(49): IssueController->actionCreate()
+#19 W:\domains\YiiRoot\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(134): IssueController->runAction()
+#21 W:\domains\trackstar\protected\controllers\IssueController.php(222): CFilterChain->run()
+#22 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext()
+#23 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#24 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 W:\domains\YiiRoot\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#26 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterAccessControl()
+#27 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#28 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#29 W:\domains\YiiRoot\framework\web\CController.php(265): IssueController->runActionWithFilters()
+#30 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): IssueController->run()
+#31 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#32 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#33 W:\domains\trackstar\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=issue/create&pid=1
+in W:\domains\trackstar\protected\models\Project.php (119)
+in W:\domains\trackstar\protected\views\issue\_form.php (52)
+in W:\domains\trackstar\protected\views\issue\create.php (18)
+2021/01/30 15:50:54 [error] [exception.CHttpException.403] CHttpException: Must specify a project before performing this action. in W:\domains\trackstar\protected\controllers\IssueController.php:220
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('create')
+#9 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 W:\domains\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=issue/create
+HTTP_REFERER=http://trackstar/index.php?r=issue
+---
