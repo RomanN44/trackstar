@@ -73,9 +73,9 @@ class Issue extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-            'requester' => array(self::BELONGS_TO, 'User', 'requester_id'),
 			'owner' => array(self::BELONGS_TO, 'User', 'owner_id'),
 			'project' => array(self::BELONGS_TO, 'Project', 'project_id'),
+            'requester' => array(self::BELONGS_TO, 'User', 'requester_id'),
 		);
 	}
 
@@ -121,7 +121,6 @@ class Issue extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('description',$this->description,true);
-		$criteria->compare('project_id',$this->project_id);
 		$criteria->compare('type_id',$this->type_id);
 		$criteria->compare('status_id',$this->status_id);
 		$criteria->compare('owner_id',$this->owner_id);
@@ -130,6 +129,8 @@ class Issue extends CActiveRecord
 		$criteria->compare('create_user_id',$this->create_user_id);
 		$criteria->compare('update_time',$this->update_time,true);
 		$criteria->compare('update_user_id',$this->update_user_id);
+		$criteria->condition='project_id=:projectID'; //TODO
+        $criteria->params=array(':projectID'=>$this->project_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -190,4 +191,25 @@ class Issue extends CActiveRecord
             self::STATUS_FINISHED
         );
     }
+
+    /**
+     * @return string the status text display for the current issue
+     */
+    public function getStatusText()
+    {
+        $statusOptions=$this->statusOptions;
+        return isset($statusOptions[$this->status_id]) ?
+            $statusOptions[$this->status_id] : "unknown status ({$this->status_id})";
+    }
+
+    /**
+     * @return string the type text display for the current issue
+     */
+    public function getTypeText()
+    {
+        $typeOptions=$this->typeOptions;
+        return isset($typeOptions[$this->type_id]) ?
+            $typeOptions[$this->type_id] : "unknown type ({$this->type_id})";
+    }
+
 }
