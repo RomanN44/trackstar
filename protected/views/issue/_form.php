@@ -31,8 +31,6 @@
 		<?php echo $form->error($model,'description'); ?>
 	</div>
 
-
-
 	<div class="row">
 		<?php echo $form->labelEx($model,'type_id'); ?>
 		<?php echo $form->dropDownList($model,'type_id',

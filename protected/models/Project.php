@@ -12,7 +12,7 @@
  * @property string $update_time
  * @property integer $update_user_id
  */
-class Project extends CActiveRecord
+class Project extends TrackStarActiveRecord
 {
 
 
@@ -118,5 +118,17 @@ class Project extends CActiveRecord
     {
         $usersArray = CHtml::listData($this->users, 'id', 'username');
         return $usersArray;
+    }
+
+    public function behaviors()
+    {
+        return array(
+            'CTimestampBehavior'=>array(
+                'class'=>'zii.behaviors.CTimestampBehavior',
+                'createAttribute'=>'create_time',
+                'updateAttribute'=>'update_time',
+                'setUpdateOnCreate'=>true,
+            ),
+        );
     }
 }

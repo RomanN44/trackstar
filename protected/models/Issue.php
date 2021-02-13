@@ -22,7 +22,7 @@
  * @property Project $project
  * @property User $requester
  */
-class Issue extends CActiveRecord
+class Issue extends TrackStarActiveRecord
 {
     const TYPE_BUG=0;
     const TYPE_FEATURE=1;
@@ -52,7 +52,7 @@ class Issue extends CActiveRecord
 		return array(
 			array('name', 'required'),
 			array('project_id, type_id, status_id, owner_id, requester_id,
-			 create_user_id, update_user_id', 'numerical', 'integerOnly'=>true),
+			create_user_id, update_user_id', 'numerical', 'integerOnly'=>true),
             array('type_id', 'in', 'range'=>self::getAllowedTypeRange()),
 			array('status_id', 'in', 'range'=>self::getAllowedStatusRange()),
 			array('name', 'length', 'max'=>255),
@@ -210,6 +210,18 @@ class Issue extends CActiveRecord
         $typeOptions=$this->typeOptions;
         return isset($typeOptions[$this->type_id]) ?
             $typeOptions[$this->type_id] : "unknown type ({$this->type_id})";
+    }
+
+    public function behaviors()
+    {
+        return array(
+            'CTimestampBehavior'=>array(
+                'class'=>'zii.behaviors.CTimestampBehavior',
+                'createAttribute'=>'create_time',
+                'updateAttribute'=>'update_time',
+                'setUpdateOnCreate'=>true,
+            ),
+        );
     }
 
 }
