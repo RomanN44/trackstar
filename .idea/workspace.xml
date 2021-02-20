@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a42d5dc-9daa-4149-8ae9-e697493d2eb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/protected/commands/RbacCommand.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/config/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/config/console.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/config/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/config/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/models/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/models/Project.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +55,7 @@
       <workItem from="1612609488349" duration="1181000" />
       <workItem from="1613220787409" duration="5704000" />
       <workItem from="1613310344903" duration="1181000" />
-      <workItem from="1613822606777" duration="4360000" />
+      <workItem from="1613822606777" duration="4704000" />
     </task>
     <servers />
   </component>

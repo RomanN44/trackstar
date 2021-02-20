@@ -131,4 +131,15 @@ class Project extends TrackStarActiveRecord
             ),
         );
     }
+
+    public function assignUser($userId, $role)
+    {
+        $command = Yiic::app()->db->createCommand();
+        $command->insert('tbl_project_user_assignment', array(
+            'role'=>$role,
+            'user_id'=>$userId,
+            'project_id'=>$this->id,
+        ));
+    }
+
 }
