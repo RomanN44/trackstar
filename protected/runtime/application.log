@@ -2206,3 +2206,20 @@ Stack trace:
 REQUEST_URI=/index.php?r=site/index
 HTTP_REFERER=http://trackstar/index.php?r=project/view&id=1
 ---
+2021/02/20 15:36:24 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in W:\domains\YiiRoot\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 W:\domains\YiiRoot\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 W:\domains\YiiRoot\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#6 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('project/admin')
+#9 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 W:\domains\trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=project/admin
+HTTP_REFERER=http://trackstar/index.php?r=site/login
+---
