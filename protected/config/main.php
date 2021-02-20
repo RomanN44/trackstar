@@ -53,6 +53,14 @@ return array(
 		// database settings are configured in database.php
 		//'db'=>require(dirname(__FILE__).'/
 
+        'authManager'=>array(
+            'class'=>'CDbAuthManager',
+            'connectionID'=>'db',
+            'itemTable' => 'tbl_auth_item',
+            'itemChildTable' => 'tbl_auth_item_child',
+            'assignmentTable' => 'tbl_auth_assignment',
+        ),
+
         'db'=>array(
             'connectionString' => 'mysql:host=127.0.0.1;dbname=trackstar',
             'emulatePrepare' => true,
@@ -80,14 +88,6 @@ return array(
 				),
 				*/
 			),
-
-            'authManager'=> array(
-                'class'=>'CDAuthManager',
-                'connectionID'=>'db',
-                'itemTable'=>'tbl_auth_item',
-                'itemChildTable'=>'tbl_auth_item_child',
-                'assignmentTable'=>'tbl_auth_assigment',
-            )
 		),
 
 	),
