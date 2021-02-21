@@ -2,6 +2,7 @@
 
 class m210220_131600_add_role_to_db_project_user_assignment extends CDbMigration
 {
+    
 	public function up()
 	{
 	    $this->addColumn('tbl_project_user_assignment', 'role', 'varchar(64)');

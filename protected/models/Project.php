@@ -134,7 +134,7 @@ class Project extends TrackStarActiveRecord
 
     public function assignUser($userId, $role)
     {
-        $command = Yiic::app()->db->createCommand();
+        $command = Yii::app()->db->createCommand();
         $command->insert('tbl_project_user_assignment', array(
             'role'=>$role,
             'user_id'=>$userId,
@@ -144,12 +144,11 @@ class Project extends TrackStarActiveRecord
 
     public function removeUser($userId)
     {
-        $command=Yii::app()->db->createCommand();
+        $command = Yii::app()->db->createCommand();
         $command->delete(
             'tbl_project_user_assignment',
             'user_id=:userId AND project_id=:projectId',
-            array(':userId'=>$userId,':projectId'=>$this->id),
-        );
+            array(':userId'=>$userId,':projectId'=>$this->id));
     }
 
     public function allowCurrentUser($role)
@@ -169,10 +168,10 @@ class Project extends TrackStarActiveRecord
 
     public function isUserInProject($user)
     {
-        $sql = "SELECT user_id FROM tbl_project_user_assignment WHERE user_id=:userId AND project_id=:projectId";
+        $sql = "SELECT user_id FROM tbl_project_user_assignment WHERE project_id=:projectId AND user_id=:userId";
         $command = Yii::app()->db->createCommand($sql);
-        $command->bindValue(":userId", $user->id, PDO::PARAM_INT);
         $command->bindValue(":projectId", $this->id, PDO::PARAM_INT);
+        $command->bindValue(":userId", $user->id, PDO::PARAM_INT);
         return $command->execute()==1;
     }
 

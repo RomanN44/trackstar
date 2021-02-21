@@ -1,5 +1,7 @@
 <?php
 
+require_once ('UserController.php');
+
 class ProjectController extends Controller
 {
 	/**
@@ -15,7 +17,7 @@ class ProjectController extends Controller
 	{
 		return array(
 			'accessControl', // perform access control for CRUD operations
-			'postOnly + delete', // we only allow deletion via POST request
+			//'postOnly + delete', // we only allow deletion via POST request
 		);
 	}
 
@@ -160,14 +162,29 @@ class ProjectController extends Controller
 		}
 	}
 
-	public function actionAdduser($id)
+    public function actionAdduser($id)
     {
         $project = $this->loadModel($id);
         if(!Yii::app()->user->checkAccess('createUser', array('project'=>$project)))
         {
+            $uc = new UserController(Yii::app()->user->id);
+            $user=$uc->loadmodel(Yii::app()->user->id);
+            if($project->isUserInProject($user))
+            {
+                print_r("1");
+            }
+            if(!$project->isUserInProject($user))
+            {
+                print_r("2");
+            }
+            print_r(Project::getUserRoleOptions());
+
+            if($project->allowCurrentUser('owner'))
+            {
+                print_r("!");
+            }
             throw new CHttpException(403,'You are not authorized to perform this action.');
         }
-
         $form=new ProjectUserForm;
         // collect user input data
         if(isset($_POST['ProjectUserForm']))

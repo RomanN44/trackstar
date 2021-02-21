@@ -32,7 +32,7 @@ class Controller extends CController
         return array(
           array('allow',
                 'controllers'=>array('issue', 'project', 'user'),
-                'actions'=>array('index','view'),
+                'actions'=>array('index','view', 'addUser'),
                 'users'=>array('@'),
               ),
           array('allow',
