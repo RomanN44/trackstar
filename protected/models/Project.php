@@ -142,4 +142,39 @@ class Project extends TrackStarActiveRecord
         ));
     }
 
+    public function removeUser($userId)
+    {
+        $command=Yii::app()->db->createCommand();
+        $command->delete(
+            'tbl_project_user_assignment',
+            'user_id=:userId AND project_id=:projectId',
+            array(':userId'=>$userId,':projectId'=>$this->id),
+        );
+    }
+
+    public function allowCurrentUser($role)
+    {
+        $sql = "SELECT * FROM tbl_project_user_assignment WHERE project_id=:projectId AND user_id=:userId AND role=:role";
+        $command = Yii::app()->db->createCommand($sql);
+        $command->bindValue(":projectId", $this->id, PDO::PARAM_INT);
+        $command->bindValue(":userId", Yii::app()->user->getId(), PDO::PARAM_INT);
+        $command->bindValue(":role", $role, PDO::PARAM_STR);
+        return $command->execute()==1;
+    }
+
+    public static function getUserRoleOptions()
+    {
+        return CHtml::listData(Yii::app()->authManager->getRoles(), 'name', 'name');
+    }
+
+    public function isUserInProject($user)
+    {
+        $sql = "SELECT user_id FROM tbl_project_user_assignment WHERE user_id=:userId AND project_id=:projectId";
+        $command = Yii::app()->db->createCommand($sql);
+        $command->bindValue(":userId", $user->id, PDO::PARAM_INT);
+        $command->bindValue(":projectId", $this->id, PDO::PARAM_INT);
+        return $command->execute()==1;
+    }
+
+
 }
