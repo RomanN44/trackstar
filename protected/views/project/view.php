@@ -17,6 +17,8 @@ $this->menu=array(
     array('label'=>'Manage Project', 'url'=>array('admin')),
     array('label'=>'Create Issue', 'url'=>array('issue/create',
         'pid'=>$model->id)),
+    array('label'=>'Add User To Project', 'url'=>array('project/adduser',
+        'id'=>$model->id))
 );
 ?>
 
