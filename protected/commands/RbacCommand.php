@@ -1,16 +1,37 @@
 <?php
+
+Yii::import('application.models.TrackStarActiveRecord');
+Yii::import('application.models.User');
+
 class RbacCommand extends CConsoleCommand
 {
-
+    /**
+     * @var CAuthManager
+     */
     private $_authManager;
 
 
     public function getHelp()
     {
-
         $description = "DESCRIPTION\n";
         $description .= '    '."This command generates an initial RBAC authorization hierarchy.\n";
         return parent::getHelp() . $description;
+    }
+
+    /**
+     * Assign user role
+     * @param $userLogin
+     * @param $role
+     * @throws CException
+     */
+    public function actionAssignUserToRole($userLogin, $role)
+    {
+        if (!$user = User::model()->findByAttributes(array('username' => $userLogin))) {
+            throw new CException("User not exist.");
+        }
+        $this->ensureAuthManagerDefined();
+        $this->_authManager->assign($role,$user->id);
+        echo "Role '{$role}' was assigned to '{$user->username}'.";
     }
 
 

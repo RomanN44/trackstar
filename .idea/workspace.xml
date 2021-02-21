@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5a42d5dc-9daa-4149-8ae9-e697493d2eb8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/components/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/components/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/commands/RbacCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/commands/RbacCommand.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/controllers/ProjectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/migrations/m210220_131600_add_role_to_db_project_user_assignment.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/migrations/m210220_131600_add_role_to_db_project_user_assignment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/models/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/models/Project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/models/ProjectUserForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/models/ProjectUserForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/runtime/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/application.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +18,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/../YiiRoot" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1ljlc2oVsdsiog6wNhzFTYNHSH7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -31,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/protected/views/project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../YiiRoot" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -63,6 +65,7 @@
       <workItem from="1613310344903" duration="1181000" />
       <workItem from="1613822606777" duration="4816000" />
       <workItem from="1613888711427" duration="9397000" />
+      <workItem from="1613908493082" duration="3336000" />
     </task>
     <servers />
   </component>
