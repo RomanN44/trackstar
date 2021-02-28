@@ -4616,3 +4616,101 @@ Stack trace:
 REQUEST_URI=/index.php?r=project/adduser&id=1
 HTTP_REFERER=http://trackstar/index.php?r=project/view&id=1
 ---
+2021/02/22 10:39:22 [error] [exception.CException] CException: CWebUser and its behaviors do not have a method or closure named "checAccess". in W:\domains\YiiRoot\framework\base\CComponent.php:266
+Stack trace:
+#0 W:\domains\trackstar\protected\views\project\view.php(21): CComponent->__call('checAccess', Array)
+#1 W:\domains\YiiRoot\framework\web\CBaseController.php(126): require('W:\\domains\\trac...')
+#2 W:\domains\YiiRoot\framework\web\CBaseController.php(95): CBaseController->renderInternal('W:\\domains\\trac...', Array, true)
+#3 W:\domains\YiiRoot\framework\web\CController.php(872): CBaseController->renderFile('W:\\domains\\trac...', Array, true)
+#4 W:\domains\YiiRoot\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#5 W:\domains\trackstar\protected\controllers\ProjectController.php(44): CController->render('view', Array)
+#6 [internal function]: ProjectController->actionView('1')
+#7 W:\domains\YiiRoot\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#8 W:\domains\YiiRoot\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#9 W:\domains\YiiRoot\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#16 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('view')
+#18 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('project/view')
+#19 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 W:\domains\trackstar\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=project/view&id=1
+HTTP_REFERER=http://trackstar/index.php?r=project
+---
+2021/02/22 10:39:31 [error] [exception.CException] CException: CWebUser and its behaviors do not have a method or closure named "checAccess". in W:\domains\YiiRoot\framework\base\CComponent.php:266
+Stack trace:
+#0 W:\domains\trackstar\protected\views\project\view.php(21): CComponent->__call('checAccess', Array)
+#1 W:\domains\YiiRoot\framework\web\CBaseController.php(126): require('W:\\domains\\trac...')
+#2 W:\domains\YiiRoot\framework\web\CBaseController.php(95): CBaseController->renderInternal('W:\\domains\\trac...', Array, true)
+#3 W:\domains\YiiRoot\framework\web\CController.php(872): CBaseController->renderFile('W:\\domains\\trac...', Array, true)
+#4 W:\domains\YiiRoot\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#5 W:\domains\trackstar\protected\controllers\ProjectController.php(44): CController->render('view', Array)
+#6 [internal function]: ProjectController->actionView('1')
+#7 W:\domains\YiiRoot\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#8 W:\domains\YiiRoot\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#9 W:\domains\YiiRoot\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#16 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('view')
+#18 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('project/view')
+#19 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 W:\domains\trackstar\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=project/view&id=1
+HTTP_REFERER=http://trackstar/index.php?r=project
+---
+2021/02/28 15:58:29 [error] [exception.Error] Error: Call to undefined function addComment() in W:\domains\trackstar\protected\controllers\IssueController.php:222
+Stack trace:
+#0 W:\domains\trackstar\protected\controllers\IssueController.php(41): IssueController->createComment(Object(Issue))
+#1 [internal function]: IssueController->actionView('1')
+#2 W:\domains\YiiRoot\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(IssueController), Array)
+#3 W:\domains\YiiRoot\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(IssueController), Object(ReflectionMethod), Array)
+#4 W:\domains\YiiRoot\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#11 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('view')
+#13 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/view')
+#14 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 W:\domains\trackstar\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=issue/view&id=1
+HTTP_REFERER=http://trackstar/index.php?r=issue/view&id=1
+---
+2021/02/28 15:58:49 [error] [exception.Error] Error: Call to undefined function addComment() in W:\domains\trackstar\protected\controllers\IssueController.php:222
+Stack trace:
+#0 W:\domains\trackstar\protected\controllers\IssueController.php(41): IssueController->createComment(Object(Issue))
+#1 [internal function]: IssueController->actionView('1')
+#2 W:\domains\YiiRoot\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(IssueController), Array)
+#3 W:\domains\YiiRoot\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(IssueController), Object(ReflectionMethod), Array)
+#4 W:\domains\YiiRoot\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 W:\domains\YiiRoot\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 W:\domains\YiiRoot\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 W:\domains\YiiRoot\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 W:\domains\YiiRoot\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 W:\domains\YiiRoot\framework\web\CController.php(291): CFilterChain->run()
+#11 W:\domains\YiiRoot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 W:\domains\YiiRoot\framework\web\CWebApplication.php(282): CController->run('view')
+#13 W:\domains\YiiRoot\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/view')
+#14 W:\domains\YiiRoot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 W:\domains\trackstar\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=issue/view&id=1
+HTTP_REFERER=http://trackstar/index.php?r=issue/view&id=1
+---
