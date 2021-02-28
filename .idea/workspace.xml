@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a42d5dc-9daa-4149-8ae9-e697493d2eb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/protected/views/issue/_comments.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/controllers/IssueController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/controllers/IssueController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/models/Comment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/models/Issue.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/models/Issue.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/runtime/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/views/issue/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/issue/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/views/project/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/project/view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +67,7 @@
       <workItem from="1613888711427" duration="9397000" />
       <workItem from="1613908493082" duration="3336000" />
       <workItem from="1613979237553" duration="439000" />
-      <workItem from="1614513820772" duration="3508000" />
+      <workItem from="1614513820772" duration="5147000" />
     </task>
     <servers />
   </component>

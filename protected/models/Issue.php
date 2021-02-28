@@ -233,8 +233,15 @@ class Issue extends TrackStarActiveRecord
     public function addComment($comment)
     {
         $comment->issue_id=$this->id;
-        return $comment;
-        //return $comment->save();
+//        $comment->update_user_id=
+//        $comment->create_user_id
+        if($comment->save())
+        {
+            return $comment->save();
+        }
+        else throw new Exception("Can't save comment!");
+
+
     }
 
 }

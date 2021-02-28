@@ -17,7 +17,7 @@
  * @property User $createUser
  * @property User $updateUser
  */
-class Comment extends TrackStarActiveRecord //CActiveRecord
+class Comment extends TrackStarActiveRecord
 {
 	/**
 	 * @return string the associated database table name
@@ -35,14 +35,26 @@ class Comment extends TrackStarActiveRecord //CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('content, issue_id, create_user_id, update_user_id', 'required'),
-			array('issue_id, create_user_id, update_user_id', 'numerical', 'integerOnly'=>true),
-			array('create_time, update_time', 'safe'),
-			// The following rule is used by search().
-			// @todo Please remove those attributes that should not be searched.
-			array('id, content, issue_id, create_time, create_user_id, update_time, update_user_id', 'safe', 'on'=>'search'),
+            array('content', 'required'),
+            array('issue_id, create_user_id, update_user_id', 'numerical', 'integerOnly'=>true),
+            array('content, create_time, update_time', 'safe'),
+            // The following rule is used by search().
+            // Please remove those attributes that should not be searched.
+            array('id, content, issue_id, create_time, create_user_id, update_time, update_user_id', 'safe', 'on'=>'search'),
 		);
 	}
+
+    public function behaviors()
+    {
+        return array(
+            'CTimestampBehavior'=>array(
+                'class'=>'zii.behaviors.CTimestampBehavior',
+                'createAttribute'=>'create_time',
+                'updateAttribute'=>'update_time',
+                'setUpdateOnCreate'=>true,
+            ),
+        );
+    }
 
 	/**
 	 * @return array relational rules.
@@ -56,14 +68,6 @@ class Comment extends TrackStarActiveRecord //CActiveRecord
 			'author' => array(self::BELONGS_TO, 'User', 'create_user_id'),
 			'updateUser' => array(self::BELONGS_TO, 'User', 'update_user_id'),
 		);
-
-//        return array(
-//            'requester' => array(self::BELONGS_TO, 'User', 'requester_id'),
-//            'owner' => array(self::BELONGS_TO, 'User', 'owner_id'),
-//            'project' => array(self::BELONGS_TO, 'Project', 'project_id'),
-//            'comments' => array(self::HAS_MANY, 'Comment', 'issue_id'),
-//            'commentCount' => array(self::STAT, 'Comment', 'issue_id'),
-//        );
 	}
 
 	/**
